@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  //NOTE: error could be remove from the path if you don't like to see it.
+  this.route('error', { path: '/error/:statusCode/:errorMessageKey' });
 });
 
 export default Router;
